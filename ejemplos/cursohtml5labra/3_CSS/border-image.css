@@ -1,0 +1,13 @@
+.diploma {
+	border-width:68px;
+	-moz-border-image:url("marcoBN1.png") 97 round ;
+	-webkit-border-image:url("marcoBN1.png") 7 round ;
+	border-image:url("marcoBN1.png") 7 round ;
+}
+
+h1 { text-align: center; }
+
+p { 
+ margin-left: 5em; 
+ margin-right: 5em;
+}

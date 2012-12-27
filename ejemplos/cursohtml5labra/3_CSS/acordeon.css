@@ -1,0 +1,33 @@
+
+.acordeon {
+ 	background: #eee;
+ 	border: 1px solid #999;
+	padding: 0 1em 24px;
+	width: 50%;
+	margin: auto; 
+}
+
+.acordeon section {
+ 	border-bottom: 1px solid #ccc;
+	padding: 0 1em;
+	background: #fff;
+}
+ 
+.acordeon section div {
+	height: 0px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s ease-in;
+	-moz-transition: height 0.3s ease-in;
+	-o-transition: height 0.3s ease-in;
+	-ms-transition: height 0.3s ease-in;
+	transition: height 0.3s ease-in; 
+}
+
+.acordeon :target h1 {
+	color: red;
+}
+
+.acordeon :target h1 + div {
+	height: 100px;
+	overflow: auto;
+}

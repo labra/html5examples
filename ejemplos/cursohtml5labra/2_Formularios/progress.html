@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Probando a progress</title>
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></script>
+<![endif]-->
+<script>
+ 
+  function actualiza() {
+    var barraProgreso = document.getElementById("p");
+	var valor = parseInt(barraProgreso.value);
+	barraProgreso.value = 10 + valor ;
+	
+	var spanTxt = document.getElementById("txt");
+	spanTxt.innerHTML = valor;
+
+	if (valor >= 100) {
+	 var tarea = document.getElementById("tarea");
+	 tarea.innerHTML="<h1>Lo conseguiste!</h1>";
+	}
+  }
+ </script>
+</head>
+<body>
+ <div id="tarea">
+ <h2>Ejercicio</h2>
+ <p>Pulsa el siguiente botón...</p>
+ <input type="button" onclick="actualiza()" value="Progresa">
+ <p>Progreso: <progress id="p" max=100 value="0"><span id="txt">0</span>%</progress></p>
+ </div>
+</body>
+</html>

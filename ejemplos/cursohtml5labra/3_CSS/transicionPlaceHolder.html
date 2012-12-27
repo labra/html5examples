@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Placeholder huidizo</title>
+	<style>
+
+body {
+  font: 14px/20px Arial;
+  background: #ccc;
+  padding: 50px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 5px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: teal;
+}
+
+a:hover {
+  color: black;
+}
+
+input {
+  padding: 10px 15px;
+  border: 1px solid #666;
+}
+
+.searchlabel {
+  font-size: 15px;
+  font-family: Georgia;
+  font-style: italic;
+  color: #666;
+  cursor: text;
+  margin: -31px 0 0 15px;
+  position: absolute;
+  display: block;
+}
+
+.place:focus + .searchlabel {
+  margin-top: -70px;
+}
+.place:hover + .searchlabel {
+  opacity: 0.5;
+}
+.place:focus + .searchlabel {
+  opacity: 1;
+  cursor: auto;
+}
+
+.searchlabel::after {
+  content: 'Texto a buscar...';
+}
+.place:hover + .searchlabel::after {
+  content: 'Pulsa para escribir...';
+}
+.place:focus + .searchlabel::after {
+  content: 'Presione ENTER para enviar...';
+}
+
+.searchlabel {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+</style>
+</head>
+
+<body id="home">
+
+	<input class="place" type="search" id="search" size="50">
+	<label class="searchlabel" for="search"></label>
+
+	<h1>Placeholder Huidizo</h1>
+	<p>Si pulsas en este texto, el placeholder vuelve a su sitio...</p>
+
+</body>
+</html>

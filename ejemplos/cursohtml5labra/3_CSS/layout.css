@@ -1,0 +1,12 @@
+body {
+ display: "a a a"
+          "b c c"
+		  "d d d";
+ }
+ header   { position: a; }
+ footer   { position : d; }
+ #nav     { position: d; }
+ #content { position: c; }
+ ::slot(a) {
+  background: yellow;
+ }

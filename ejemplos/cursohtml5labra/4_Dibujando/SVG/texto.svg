@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg width="500" height="500" viewBox="0 0 500 500" 
+   xmlns="http://www.w3.org/2000/svg">
+
+<text x="220" y="20">
+<tspan x="220" dy="30">Texto en varias líneas</tspan>
+<tspan x="220" dy="30">Siguiente línea</tspan>
+<tspan x="220" dy="30" style="font-weight:bold;fill:green;stroke:blue">Con diferentes propiedades</tspan>
+<tspan x="220" dy="30" rotate="10 -10 10 -10 10 -10 10">incluso rotaciones</tspan>
+</text>
+
+</svg>
