@@ -1,0 +1,17 @@
+<form>
+ <p>Cliente: <input name=nombre required></p>
+ <p>Tlfno: <input name=tlfno type=tel ></p>
+ <p>Email: <input name=email type=email></p>
+ <p>NIF: <input name=id required pattern="\d{7,8}[A-Z]"> 
+ <fieldset required>
+   <legend>Género</legend>
+    <p><input type=radio name=genero>Hombre</p>
+    <p><input type=radio name=genero>Mujer</p>
+  </fieldset>
+  <p>Edad <input type=number min=0 max=100 name="edad"></p>
+  <p>Url <input type=url" name="url"></p>
+  <p>Valoración: 
+  <input type=range name=edad 
+         min=0 max=5 value=0 step=1></p>
+ <p><button type="submit">Enviar</button></p>
+</form>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Prueba de HTML 5 Microdata</title>
+<meta charset="iso-8859-1" />
+</head>
+<body>
+<h1>Productos en oferta:</h1>
+<div itemscope 
+     itemtype="http://schema.org/Offer"
+     itemid="http://ejemplo.org/Oferta24">
+ <h1 itemprop="name">Batidora</h1> 
+ <p>Precio: <span itemprop="price">19.95€</span>
+ <p itemscope itemprop="reviews" 
+    itemtype="http://schema.org/AggregateRating">
+ Puntuación:
+    <span itemprop="ratingValue">3</span> sobre 
+    <span itemprop="bestRating">5</span>.
+    Basado en <span itemprop="ratingCount">25</span> usuarios
+  </p>
+</div>
+</body>

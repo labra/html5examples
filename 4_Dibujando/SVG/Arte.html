@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML + SVG</title>
+  </head>
+<script type="text/ecmascript">
+ function addrect(evt) {
+  var svgobj  = evt.target;
+  var svgdoc  = svgobj.ownerDocument;
+  var newnode = svgobj.cloneNode(false);
+  svgstyle    = newnode.style;
+  var x = 10 + 480 * Math.random();
+  var y = 10 + 330 * Math.random();
+  var width=10+100*Math.random();
+  var height=10+50*Math.random();
+  newnode.setAttribute('x',x);
+  newnode.setAttribute('y',y);
+  newnode.setAttribute('width',width);
+  newnode.setAttribute('height',height);
+  svgstyle.setProperty('opacity',0.3+0.7*Math.random());
+  var contents = svgdoc.getElementById('contents');
+  newnode = contents.appendChild(newnode);
+ }
+</script>
+<body>
+<svg>
+<g id="contents">
+ <rect onclick="addrect(evt)" style="fill:red;opacity:1" 
+           x="150" y="100" width="20" height="20"/>
+ <rect onclick="addrect(evt)" style="fill:green;opacity:1" 
+           x="250" y="100" width="20" height="20"/>
+ <rect onclick="addrect(evt)" style="fill:blue;opacity:1" 
+           x="350" y="100" width="20" height="20"/>
+</g>
+</svg>
+</body>
+</html>

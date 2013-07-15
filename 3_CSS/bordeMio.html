@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+.caja {
+ width: 50% ;
+ height: auto;
+ border-radius: 10px 10px;
+ text-align: center;
+}
+#caja1 {
+ font-size: 300%;
+ color: green;
+ text-shadow: 5px 3px 2px gray;
+ -webkit-text-stroke: 2px black;
+ text-stroke: 2px black;
+ -moz-border-image:url("bordeMio.png") 7 repeat ;
+ -webkit-border-image:url("bordeMio.png") 7 stretch;
+ border-image:url("bordeMio.png") 7 repeat;
+}
+#caja2 {
+ color: blue;
+}
+#caja2:hover {
+ color: red;
+ text-shadow: 10px 10px 5px yellow ;
+ -webkit-transform: rotate(10deg);
+ -moz-transform: rotate(10deg);
+ -o-transform: rotate(10deg);
+ transform: rotate(10deg);
+ -moz-border-image:url("marcoBN.png") 7 stretch ;
+ -webkit-border-image:url("marcoBN.png") 7 stretch ;
+ border-image:url("marcoBN.png") 7 stretch;
+}
+#caja3 {
+ text-shadow: #000 0 0 2px;
+ color: #fff;
+}
+</style>
+</head>
+<body>
+<div id="caja1" class="caja">
+<h1>Texto de la caja1</h1>
+</div>
+<div id="caja2" class="caja">
+<h1>Texto de la segunda caja</h1>
+</div>
+<div id="caja3" class="caja">
+<h1>Texto de la tercer caja</h1>
+</div>
+</body>
+</html>

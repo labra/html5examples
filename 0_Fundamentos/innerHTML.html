@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>InnerHTML</title>
+  <script>
+   function verP() {
+    p = document.getElementsByTagName("p")[0];
+	alert("Contenidos de p = " + p.innerHTML);
+   }
+   function cambiaP() {
+    p = document.getElementsByTagName("p")[0];
+	p.innerHTML += "<hr/><b>Otro párrafo</b>" ;
+   }
+  </script>
+</head>
+<body>
+ <h1>Ejemplo de innerHTML</h1>
+ <p>Esto es un párrafo con un <em>enfatizado</em></p>
+ <button onclick="verP()">ver P</button> 
+ <button onclick="cambiaP()">Cambia P</button> 
+</body>
+</html>
