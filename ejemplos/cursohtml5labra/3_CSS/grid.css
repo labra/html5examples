@@ -1,6 +1,0 @@
-body { grid-columns: * * (0.5in * *)[2];
-       grid-rows: 20% *;
-       columns:3; column-gap:0.5in; }
-       
-img  { float:page top left;
-       float-offset: 4gr 1gr; }
