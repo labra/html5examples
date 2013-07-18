@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'miFuente';
+  font-style: normal;
+  font-weight: normal;
+  src: url('miFuente.woff') format('woff');
+}
+
+body { font-family: 'miFuente', cursive; }
+
+/* Ejemplo */
+h1, h2 { 
+ color: black; 
+ background-color: yellow;
+}
+
+.verso {
+ margin-left: 3em;
+ font-style: italic;
+ 
+}
+
+#golondrinas {
+ background: #D6C84B;
+}
+
+article.poema {
+ border: 1px solid;
+ border-top-left-radius: 55pt 25pt;
+ border-top-right-radius: 55pt 25pt;
+ border-bottom-right-radius: 55pt 25pt;
+ border-bottom-left-radius: 55pt 25pt;
+ margin-left: 10%;
+ margin-top: 2%;
+ margin-right: 20%;
+ -webkit-box-shadow: -5px -5px 5px 0px grey;
+ -moz-box-shadow: -5px -5px 5px 0px grey;
+ box-shadow: -5px -5px 5px 0px grey;
+}
+
+@font-face {
+ font-family: 'miFuente' ;
+ src: url('fuentes/miFuente.eot') format('eot') 
+	  url('fuentes/miFuente.ttf') format('truetype') ;
+ font-weight: bold;
+ font-style: normal;
+}
+
+h1 {
+ font-family: miFuente, sans-serif;
+ text-transform: uppercase;
+}
+
+div.caja {
+ margin: 4em 2em 3em 1em;
+ padding: 4em 2em 8em 1em;
+ border: 1px solid red;
+}

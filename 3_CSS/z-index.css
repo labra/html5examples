@@ -1,0 +1,21 @@
+#caja_A { position: absolute; top: 100px; left: 100px; width:120px; height:100px;
+		  background-color:green; 
+          z-index:3; 
+} 
+
+#caja_B { position: absolute; top: 75px; left: 75px; width:100; height:100px; 
+          background-color:red; 
+          z-index:2; 
+} 
+
+#caja_C { position: absolute; top: 0px; left: 50px; width:50; height:50px; 
+          background-color:blue; 
+          z-index:1; 
+} 
+
+#caja_D { position: absolute; top: 40px; left: 60px; width:50; height:50px; 
+          background-color:yellow; 
+          z-index:0; 
+} 
+
+    

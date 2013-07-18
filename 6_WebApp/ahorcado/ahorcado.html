@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ahorcado</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="ahorcado.css" >
+  <script src="ahorcado.js" > </script>
+  <script src="modernizr.js"> </script>
+ </head>
+ <body onLoad="init()">
+  <section id="principal">
+   <h1>Juego del ahorcado</h1>
+   <p>Palabra a adivinar:<span id="palabra"></span></p>
+   <p>Tecla: <span id="tecla"> </span></p>
+   <p>Mensaje: <span id="mensaje"> </span></p>
+   <div id="letras">
+    Letras: 
+   </div>
+   <div id="dibujo">
+    <canvas id="idCanvas" width="200" height="200">
+	  El navegador que está utilizando no permite realizar dibujos.
+	</canvas>
+   </div>
+  </section>
+</body>
+</html>
+

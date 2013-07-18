@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg width="150" height="150">
+<rect x="10" y="10" width="130" height="130" fill="white" stroke="blue"/>
+
+<g transform="translate(20,20)">
+<g stroke="none" fill="lime">
+ <path
+     d="M 16 9 
+           L 96 9 L 59 46 L 59 94 C 59 94 57 100 84 102 
+           L 84 103 L 31 103 L 31 102 C 56 100 54 94 54 94 
+           L 54 46 L 16 9 z "
+/>
+</g>
+</g>
+</svg>

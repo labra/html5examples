@@ -1,0 +1,35 @@
+<html>
+<head><title>Ejemplo</title></head>
+<script type="text/javascript" charset="utf-8">
+ function espiral(valor) {
+    
+	var c = document.getElementById('idCanvas');
+    var context = c.getContext("2d");
+    var cx = context.canvas.width / 2;
+    var cy = context.canvas.height / 2;
+
+    v = parseFloat(valor)*0.1;
+    a = v;
+    b = v;
+
+    context.clearRect(0, 0, 300, 300);
+    context.moveTo(cx, cy);
+    context.beginPath();
+    for (i = 0; i < 900; i++) {
+        angulo = 0.1 * i;
+        x = cx + (a + b * angulo) * Math.cos(angulo);
+        y = cy + (a + b * angulo) * Math.sin(angulo);
+
+        context.lineTo(x, y);
+    }
+    context.strokeStyle = "#000";
+    context.stroke();
+	
+}
+</script>
+<body>
+ <canvas id="idCanvas" width="300" height="225"></canvas>
+ <input type="range" min="1" max="100" value="1" step="1" onchange="espiral(this.value)" />
+ <span id="rango">1</span>
+</body>
+</html>

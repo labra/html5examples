@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><title>Filter</title></head>
+<body>
+<h1>Filter</h1>
+<svg width="500" height="500">
+
+<defs>
+<g transform="scale(2,2)" id="copa" stroke="none" fill="blue">
+  <path 
+     d="M 16 9 
+           L 96 9 L 59 46 L 59 94 C 59 94 57 100 84 102 
+           L 84 103 L 31 103 L 31 102 C 56 100 54 94 54 94 
+           L 54 46 L 16 9 z "
+   />
+</g>
+
+  <filter id="filtro" 
+          filterUnits="userSpaceOnUse" 
+          x="0" y="0" width="500" height="500">
+      <feGaussianBlur in="SourceAlpha" 
+                       stdDeviation="10" result="sombra"/>
+      <feOffset in="sombra" dx="10" dy="10" result="sombraDesp"/>
+      <feSpecularLighting in="sombra" 
+                          surfaceScale="5" 
+                          specularConstant=".75" 
+                          specularExponent="40" 
+                          lighting-color="white"  
+                          result="brillo">
+        <fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in="brillo" in2="SourceAlpha" operator="in" result="brillo"/>
+      <feComposite in="SourceGraphic" in2="brillo" operator="arithmetic" 
+                   k1="0" k2="1" k3="1" k4="0" result="objeto"/>
+      <feMerge>
+        <feMergeNode in="sombraDesp"/>
+        <feMergeNode in="objeto"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+
+  <use xlink:href="#copa" filter="url(#filtro)"/>
+  
+</svg>
+</body>
+</html>
